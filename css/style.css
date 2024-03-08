@@ -16,13 +16,64 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0%;
 }
+
+header{
+    justify-content: space-between;
+}
+nav {
+    display: flex-end;
+    justify-content: center;
+    width: 100%;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 0%;
+    margin: 0%; 
+}
+/** Hover corespond au survole de la liste "li" contenu dans la liste "ul" ( le menu ) */
+nav li :hover{  
+    border-top:2px solid #0065FC; 
+    padding-top: 1px;
+    color: #0065FC;
+}
+nav ul li {
+    display: flex;
+    font-family: ;
+   border-top: solid ;
+    border-top: #0065FC;
+    padding-top: 5px;
+    justify-content: flex-end;
+        width: 100px;
+        box-sizing: border-box;
+       
+}
+nav ul li a{
+    display:flex;
+    align-items:space-between;
+    flex-flow:  wrap row-reverse;
+    justify content: flex-start;
+
+}
+#logo-nav{
+    display:flex;
+    flex-flow: nowrap column;
+    justify-content: center;
+    background-color:pink;
+    max-width: 5%;
+
+ }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    justify-content: left;
 }
 
 a {
