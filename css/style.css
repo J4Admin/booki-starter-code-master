@@ -17,17 +17,23 @@ body {
     display: flex;
     justify-content: center;
     margin: 0%;
+    
+    
 }
 
 header{
+  max-width: 1440px;
 
-    max-width: 1440px;
-    margin: 2px;
+ 
+    
+
 }
 nav {
     display: flex-end;
     justify-content: center;
     width: 100%;
+    
+   
 }
 nav ul {
     display: flex;
@@ -35,32 +41,36 @@ nav ul {
     align-items: center;
     flex-flow: row wrap;
     margin: 0px; 
+ 
+    
 }
 /** Hover corespond au survole de la liste "li" contenu dans la liste "ul" ( le menu ) */
 nav li :hover{     
     border-top: 2px solid #0065FC; 
     color: #0065FC;
+   
+    
 }
 nav ul li {
     display: flex;
     justify-content: flex-end;
-    border-top: #0065FC;
     width: 100px;
-    box-sizing: border-box;
-       
 }
 nav ul li a{
-    display:flex;
+    display:flex; 
     align-items:space-between;
     flex-flow:  wrap row-reverse;
     justify content: flex-start;
+    padding: 15px;
+    margin: 2px hidden;
+
 
 }
 #logo-nav{
     display:flex;
     flex-flow: nowrap column;
     justify-content: center;
-    max-width: 5%;
+    max-width: 5em;
 
  }
 
