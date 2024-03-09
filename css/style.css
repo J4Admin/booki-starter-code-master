@@ -20,7 +20,9 @@ body {
 }
 
 header{
-    justify-content: space-between;
+
+    max-width: 1440px;
+    margin: 2px;
 }
 nav {
     display: flex-end;
@@ -32,24 +34,19 @@ nav ul {
     justify-content: flex-end;
     align-items: center;
     flex-flow: row wrap;
-    padding: 0%;
-    margin: 0%; 
+    margin: 0px; 
 }
 /** Hover corespond au survole de la liste "li" contenu dans la liste "ul" ( le menu ) */
-nav li :hover{  
-    border-top:2px solid #0065FC; 
-    padding-top: 1px;
+nav li :hover{     
+    border-top: 2px solid #0065FC; 
     color: #0065FC;
 }
 nav ul li {
     display: flex;
-    font-family: ;
-   border-top: solid ;
-    border-top: #0065FC;
-    padding-top: 5px;
     justify-content: flex-end;
-        width: 100px;
-        box-sizing: border-box;
+    border-top: #0065FC;
+    width: 100px;
+    box-sizing: border-box;
        
 }
 nav ul li a{
@@ -63,7 +60,6 @@ nav ul li a{
     display:flex;
     flex-flow: nowrap column;
     justify-content: center;
-    background-color:pink;
     max-width: 5%;
 
  }
