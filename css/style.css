@@ -1,101 +1,105 @@
 /****** General ***********/
-* {
-    font-family: 'Raleway', sans-serif;
+* 
+{
+        font-family: 'Raleway', sans-serif;
 }
 
-:root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
+:root 
+{
+        --main-color: #0065FC;
+        --main-bg-color: #F2F2F2;
+        --filter-bg-color: #DEEBFF;
 }
 
-.fa-solid {
-    color: var(--main-color);
+.fa-solid 
+{
+        color: var(--main-color);
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    margin: 0px;  
+body 
+{
+        display: flex;
+        justify-content: center;
+        margin: 0px;  
 }
-header{  
-  max-width: 1440px;
+            /*Etapes 3 - Ligne 26-73*/
+header
+{  
+        max-width: 1440px;
 }
-nav {
-    
-    display: flex-end;
-    justify-content: center;
-    width: 100%
-    
-   
-}
-nav ul {
+nav 
+    {
+        justify-content: center;
+        width: 100% 
+    }
 
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-flow: row wrap;
-    margin: 0px; 
-}
-/** Hover corespond au survole de la liste "li" contenu dans la liste "ul" ( le menu ) */
-/** Lors de cette étapes j'ai rencontré un probleme lié à 
-la bordure-top qui décallé totallement le reste de la page, je l'ai résolut via reddit , 
-en y ajouttant une margin -3px pour compensé la bordure */
-nav li :hover{   
-    box-sizing:content-box;
-    border-top: 4px solid #0065FC; 
-    margin: -3px;
-    color: #0065FC;
+ul 
+    {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-flow: row wrap;
+        margin: auto; 
+    }
+li 
+    {
+        display: flex;
+        justify-content: flex-end;
+        width: 100px;
+    }
+a
+    {
+        border-top: 4px solid #F2F2F2;
+        padding: 15px;
+    }
+#logo-nav
+    {  
 
-  
-    
-}
-nav ul li {
- 
-    display: flex;
-    border:2px hidden;
-    justify-content: flex-end;
-    width: 100px;
-}
-nav ul li a{   
-  
-    align-items:space-between;
-    flex-flow:  wrap row-reverse;
-    justify-content: flex-start;
-    padding: 15px;
-    margin: 2px hidden;
-}
-#logo-nav{  
-    flex-flow: nowrap column;
-    justify-content: center;
-    max-width: 5em;
+        flex-flow: nowrap column;
+        justify-content: center;
+        max-width: 5em;
 
- }
+    }
+        /** Hover corespond au survole de la liste "li" contenu dans la liste "ul" ( le menu ) */
+        /** Lors de cette étapes j'ai rencontré un probleme lié à 
+        la bordure-top qui décallé totallement le reste de la page, je l'ai résolut via reddit , 
+        en y ajouttant une margin -3px pour compensé la bordure */
+ nav ul li a:hover
+    {   
+        box-sizing:content-box;
+        border-top: 4px solid #0065FC; 
+        color: #0065FC;   
+    }
 
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
-    justify-content: left;
-}
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
+.main-container 
+    {
+        width: 100%;
+        max-width: 1440px;
+        padding: 0 50px;
+        box-sizing: border-box;
+        justify-content: left;
+    }
 
-.section-title {
-    margin: 0;
-    font-size: 22px;
-}
+a 
+    {
+        color: inherit;
+        text-decoration: none;
+    }
 
-.card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
+.section-title 
+    {
+        margin: 0;
+        font-size: 22px;
+    }
+
+.card 
+    {
+        background-color: white;
+        border-radius: 20px;
+        padding: 5px;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    }
 
 .card img {
     object-fit: cover;
