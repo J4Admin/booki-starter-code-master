@@ -16,58 +16,56 @@
 body {
     display: flex;
     justify-content: center;
-    margin: 0%;
-    
-    
+    margin: 0px;  
 }
-
-header{
+header{  
   max-width: 1440px;
-
- 
-    
-
 }
 nav {
+    
     display: flex-end;
     justify-content: center;
-    width: 100%;
+    width: 100%
     
    
 }
 nav ul {
+
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-flow: row wrap;
     margin: 0px; 
- 
-    
 }
 /** Hover corespond au survole de la liste "li" contenu dans la liste "ul" ( le menu ) */
-nav li :hover{     
-    border-top: 2px solid #0065FC; 
+/** Lors de cette étapes j'ai rencontré un probleme lié à 
+la bordure-top qui décallé totallement le reste de la page, je l'ai résolut via reddit , 
+en y ajouttant une margin -3px pour compensé la bordure */
+nav li :hover{   
+    box-sizing:content-box;
+    border-top: 4px solid #0065FC; 
+    margin: -3px;
     color: #0065FC;
-   
+
+  
     
 }
 nav ul li {
+ 
     display: flex;
+    border:2px hidden;
     justify-content: flex-end;
     width: 100px;
 }
-nav ul li a{
-    display:flex; 
+nav ul li a{   
+  
     align-items:space-between;
     flex-flow:  wrap row-reverse;
-    justify content: flex-start;
+    justify-content: flex-start;
     padding: 15px;
     margin: 2px hidden;
-
-
 }
-#logo-nav{
-    display:flex;
+#logo-nav{  
     flex-flow: nowrap column;
     justify-content: center;
     max-width: 5em;
