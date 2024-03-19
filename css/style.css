@@ -1,106 +1,141 @@
 /****** General ***********/
-* 
-    {
+* {
         font-family: 'Raleway', sans-serif;
-    }
+}
 
-:root 
-    {
+:root {
         --main-color: #0065FC;
         --main-bg-color: #F2F2F2;
         --filter-bg-color: #DEEBFF;
-    }
+}
 
-.fa-solid 
-    {
+.fa-solid {
         color: var(--main-color);
-    }   
+}   
 
-body 
-    {
+body {
         display: flex;
         justify-content: center;
         margin: 0px;  
-    }
-            /*Etapes 3 - Ligne 26-73*/
-header
-    {    
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    justify-content: left;
+}
+
+    /*Etapes 3 - Ligne 26-73*/
+/****** Header - Nav ***********/
+header {    
         max-width: 1440px;
-    }
-nav 
-    {
+}
+nav {
         justify-content: center;
         width: 100% 
-    }
+}
 
-ul 
-    {
+ul {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         flex-flow: row wrap;
         margin: auto; 
-    }
-li 
-    {
+}
+li {
         display: flex;
         justify-content: flex-end;
         width: 100px;
-    }
-a
-    {
+}
+nav ul li a{
         border-top: 4px solid var(--main-bg-color);
         padding: 15px;
-    }
-#logo-nav
-    {  
+}
+#logo-nav {  
 
         flex-flow: nowrap column;
         justify-content: center;
         max-width: 5em;
 
-    }
+}
         /** Hover corespond au survole de la liste "li" contenu dans la liste "ul" ( le menu ) */
         /** Lors de cette étapes j'ai rencontré un probleme lié à 
         la bordure-top qui décallé totallement le reste de la page, je l'ai résolut via reddit , 
         en y ajouttant une margin -3px pour compensé la bordure et 
         j'ai fini par ajouté à la version initial sans "hoover" une bordure blanche( transparente)*/
- nav ul li a:hover
-    {   
+ nav ul li a:hover {   
         box-sizing:content-box;
         border-top: 4px solid var(--main-color); 
         color: var(--main-color);   
-    }
+}
+/****** Search-box***********/
+button{
+    background-color: var(--main-color);
+    color: var(--main-bg-color);
+    border: 10px solid var(--main-color);
+    border-radius: 1% 25% 25% 1%;
+}
+.search-filters{
+    display: flex;
+   justify-content: ;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+.search-fileters ul li a {
+    align-items: flex-start;
+}
 
 
-.main-container 
-    {
-        width: 100%;
-        max-width: 1440px;
-        padding: 0 50px;
-        box-sizing: border-box;
-        justify-content: left;
-    }
 
-a 
-    {
+
+
+
+
+
+
+
+
+
+.search-footer{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content:flex-start;
+    align-items: center;
+}
+.search-footer i{
+  
+
+  
+  
+
+}
+.search-footer a{
+    margin: 2px;
+}
+
+
+
+
+
+a {
         color: inherit;
         text-decoration: none;
-    }
+}
 
-.section-title 
-    {
+.section-title {
         margin: 0;
         font-size: 22px;
-    }
+}
 
-.card 
-    {
+.card {
         background-color: white;
         border-radius: 20px;
         padding: 5px;
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    }
+}
 
 .card img {
     object-fit: cover;
