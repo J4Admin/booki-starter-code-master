@@ -71,12 +71,44 @@ nav ul li a{
         color: var(--main-color);   
 }
 /****** Search-box***********/
+
+.search-title{
+    margin: 45px 0 25PX 0;
+}
+h1{
+margin: auto;
+}
+
+p{
+    margin-top: 2px;
+}
+
+label{
+    background-color: var(--main-bg-color);
+    border: 1px solid var(--main-bg-color);
+    border-radius: 10px 0 0 10px;
+    padding: 12px 14PX 13PX 18PX ;
+    margin-right: -5px;
+
+}
+input{
+    border:1px solid var(--main-bg-color) ;
+    padding: 14px;
+    
+}
+
 button{
     background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 0 10px 10px 0;
     color: var(--main-bg-color);
-    border: 10px solid var(--main-color);
-    border-radius: 1% 25% 25% 1%;
+    padding: 14px 16px 14px 16px;
+    margin-left: -4px;
 }
+.fa-location-dot{
+    color: black;
+}
+
 .search-filters{
     display: flex;
    justify-content: ;
