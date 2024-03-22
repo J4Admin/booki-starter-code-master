@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
         font-family: 'Raleway', sans-serif;
+         
 }
 
 :root {
@@ -16,12 +17,15 @@
 body {
         display: flex;
         justify-content: center;
-        margin: 0px;  
-}
+        margin: 0;
+
+}    
 
 .main-container {
     width: 100%;
     max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 50px;
     box-sizing: border-box;
     justify-content: left;
@@ -50,7 +54,7 @@ li {
         width: 100px;
 }
 nav ul li a{
-        border-top: 4px solid var(--main-bg-color);
+        border-top: 4px solid white;
         padding: 15px;
 }
 #logo-nav {  
@@ -65,38 +69,60 @@ nav ul li a{
         la bordure-top qui décallé totallement le reste de la page, je l'ai résolut via reddit , 
         en y ajouttant une margin -3px pour compensé la bordure et 
         j'ai fini par ajouté à la version initial sans "hoover" une bordure blanche( transparente)*/
- nav ul li a:hover {   
+ ul li a:hover {   
         box-sizing:content-box;
         border-top: 4px solid var(--main-color); 
         color: var(--main-color);   
 }
-/****** Search-box***********/
 
+/*Etapes 3 - Ligne 81-158*/
+/****** Search-box***********/
+/****** Title ******/
+.search-box{
+
+}
 .search-title{
     margin: 45px 0 25PX 0;
 }
+
 h1{
-margin: auto;
+    font-size: 22px;
+    margin: auto;
 }
 
 p{
+    font-size: 16px;
     margin-top: 2px;
 }
-
+/******* Search bar  ******/
+/*******   icone  ******/
 label{
     background-color: var(--main-bg-color);
     border: 1px solid var(--main-bg-color);
     border-radius: 10px 0 0 10px;
-    padding: 12px 14PX 13PX 18PX ;
+    padding: 9px 14PX 13PX 14PX ;
     margin-right: -5px;
+    
 
 }
+/*******   Area Text  ******/
 input{
     border:1px solid var(--main-bg-color) ;
     padding: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
     
 }
-
+input::placeholder{
+    font-size: 18px;
+    font-weight: bold;
+  
+}
+input:focus{
+    outline:none;
+}
+/*******  Button "Rechercher" ******/
 button{
     background-color: var(--main-color);
     border: 1px solid var(--main-color);
@@ -104,11 +130,14 @@ button{
     color: var(--main-bg-color);
     padding: 14px 16px 14px 16px;
     margin-left: -4px;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: center;
 }
 .fa-location-dot{
     color: black;
 }
-
+/*******  Filtres ******/
 .search-filters{
     display: flex;
    justify-content: ;
@@ -119,18 +148,7 @@ button{
 .search-fileters ul li a {
     align-items: flex-start;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+/******* Search Section Footer ******/
 .search-footer{
     display:flex;
     flex-flow: row nowrap;
@@ -138,10 +156,6 @@ button{
     align-items: center;
 }
 .search-footer i{
-  
-
-  
-  
 
 }
 .search-footer a{
