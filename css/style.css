@@ -8,6 +8,7 @@
         --main-color: #0065FC;
         --main-bg-color: #F2F2F2;
         --filter-bg-color: #DEEBFF;
+      
 }
 
 .fa-solid {
@@ -48,7 +49,8 @@ ul {
         flex-flow: row wrap;
         margin: auto; 
 }
-li {
+/* ajout de nav, dans le but de spécifié les attributs, à cette élément précis, sans parasité le reste du code notament >> Filtres Li*/
+nav li {
         display: flex;
         justify-content: flex-end;
         width: 100px;
@@ -69,18 +71,16 @@ nav ul li a{
         la bordure-top qui décallé totallement le reste de la page, je l'ai résolut via reddit , 
         en y ajouttant une margin -3px pour compensé la bordure et 
         j'ai fini par ajouté à la version initial sans "hoover" une bordure blanche( transparente)*/
- ul li a:hover {   
+nav a:hover {   
         box-sizing:content-box;
         border-top: 4px solid var(--main-color); 
         color: var(--main-color);   
 }
 
-/*Etapes 3 - Ligne 81-158*/
+/*Etapes 4 - Ligne 81-158*/
 /****** Search-box***********/
 /****** Title ******/
-.search-box{
 
-}
 .search-title{
     margin: 45px 0 25PX 0;
 }
@@ -100,10 +100,8 @@ label{
     background-color: var(--main-bg-color);
     border: 1px solid var(--main-bg-color);
     border-radius: 10px 0 0 10px;
-    padding: 9px 14PX 13PX 14PX ;
+    padding: 16px 15PX 15PX 15PX ;
     margin-right: -5px;
-    
-
 }
 /*******   Area Text  ******/
 input{
@@ -111,13 +109,7 @@ input{
     padding: 14px;
     font-size: 18px;
     font-weight: bold;
-    text-align: center;
-    
-}
-input::placeholder{
-    font-size: 18px;
-    font-weight: bold;
-  
+    text-align: center;  
 }
 input:focus{
     outline:none;
@@ -132,21 +124,52 @@ button{
     margin-left: -4px;
     font-size: 18px;
     font-weight: bold;
-    font-style: center;
+
 }
 .fa-location-dot{
     color: black;
 }
+
+/*Etapes 5 */
 /*******  Filtres ******/
+
 .search-filters{
     display: flex;
-   justify-content: ;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    align-items:center; 
+    margin: 25px 0px;
+    
 
 }
-.search-fileters ul li a {
-    align-items: flex-start;
+.search-filters h2{
+    font-size: 18px;
+}
+.search-filters ul{
+  
+  flex-flow: row nowrap;
+   margin: 0px;
+    gap: 15px ;
+   
+
+}
+.search-filters li{
+   display: flex;
+    align-items: center;
+    padding: 5px;
+   border:2px solid var(--main-bg-color);
+   border-radius: 50px;
+   gap:10px;
+}
+.search-filters i{
+    margin-right: 10px;
+}
+.search-filters a{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.search-filters li:hover {   
+   background-color:var(--filter-bg-color); 
+ 
 }
 /******* Search Section Footer ******/
 .search-footer{
