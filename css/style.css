@@ -175,19 +175,17 @@ button{
 .search-footer{
     display:flex;
     flex-flow: row nowrap;
-    justify-content:flex-start;
     align-items: center;
-}
-.search-footer i{
-
-}
-.search-footer a{
-    margin: 2px;
+    margin-bottom: 10px;
+    gap: 10px;
 }
 
-
-
-
+.search-footer i {
+    justify-content: center;
+    border:2px solid var(--main-bg-color);
+    border-radius: 90px 90px 90px 90px;
+    padding:  3px 8px;
+}
 
 a {
         color: inherit;
