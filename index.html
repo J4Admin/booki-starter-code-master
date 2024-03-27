@@ -30,18 +30,47 @@
                 afin que celle ci soit présent sur la même ligne sans devoir la repositionée et faire du code superflux dans le fichier .css -->
             <nav class="navbar">
                 <ul>
-                  <li><a id= "hebergements-nav" href="#">Hébergements</a></li>
-                  <li><a id= "activities-nav"  href="#">Activités</a></li>
+                  <li><a href="#herbergements">Hébergements</a></li>
+                  <li><a href="#Activities">Activités</a></li>
                 </ul>
                 <img src="/Projet2/booki-starter-code-master/images/logo/Booki.png" alt= "booki-logo" id="logo-nav" />
             </nav>
 
         </header>
-    
+        <section class="search-box">        
+            <div class="search-title">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
+            </div>
+            <div>
+                <form class="search-form">
+                    <label >
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    </label>
+                    <input type="text" name="search-txt" id="search-place" placeholder="Marseille, France">
+                    <button>
+                           Rechercher
+                    </button>
+                </form>
+            </div>
+            <div class="search-filters">
+                    <h2>Filtres</h2>
+                    <ul>
+                        <li><a  href="#"><i class="fa-sharp fa-solid fa-money-bill-wave fa-fw fa-lg" aria-hidden="true"></i>Économique</a></li>
+                        <li><a  href="#"><i class="fa-sharp fa-solid fa-child fa-fw fa-lg" aria-hidden="true"></i>Famillial</a></li>
+                        <li><a  href="#"><i class="fa-sharp fa-solid fa-heart fa-fw fa-lg" aria-hidden="true"></i>Romantique</a></li>
+                        <li><a  href="#"><i class="fa-sharp fa-solid fa-fire fa-fw fa-lg" aria-hidden="true"></i>Nos pépites</a></li>
+                    </ul>
+            </div>
+            <div class="search-footer">
+                    <i class="fa- fa-solid fa-info " aria-hidden="true" ></i>
+                    <a>Plus de 500 logements sont disponible dans cette ville</a>
+            </div>
+        </section>
         <main>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
-
+                    <h2>                        </h2>
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
@@ -110,13 +139,8 @@
                 </section>
             </div>
         </main>   
-
-
-
-    </div>
-
         <footer>
         </footer>
+    </div>
 </body>
-
 </html>
