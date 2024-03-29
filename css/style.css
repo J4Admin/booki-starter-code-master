@@ -187,29 +187,21 @@ button{
 
 
 
-
-
-
-
-
-
-
-
 a {
-        color: inherit;
-        text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 .section-title {
-        margin: 0;
-        font-size: 22px;
+    margin: 0;
+    font-size: 22px;
 }
 
 .card {
-        background-color: white;
-        border-radius: 20px;
-        padding: 5px;
-        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .card img {
@@ -244,43 +236,67 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+
 }
 
-
-
-/******* Etapes 6 ******/
+/******* Etapes 6/ 7 ******/
 /******* Hebergements ******/
 
-.hebergements{
-    display: flex;
-    flex-flow: column nowrap;
-    }
 .title-h2{
-    font-size: 22;
+    font-size: 22px;
     font-weight: bold;
 }
 .hebergements .card{
-        display: flex;
-        height: 220px;
-        width: 135%;
-        flex-flow: column nowrap;
-        
-        
-}
-.hebergements-cards{
     display: flex;
-    flex-flow: row nowrap;
-    gap: 135px;
-    width: 1500px;
-    height: 15000;
+    gap: 4px;
+    flex-flow: column wrap;
+    width: 170%;
+
+        
 }
+.hebergements-cards1{
     
-.hebergements-cards img{
-        width: 100%;
-        height: 100px;
-        border-radius: 20px 20px 0 0;
-        object-fit: cover; 
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    gap: 10px;
+    
+    
+
+}
+.hebergements-cards1 a{
+
+    display: flex;
+    width: 32%;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  
+
+}
+  
+.hebergements-cards1 img{
+    width: 100%;
+    height: 120px;
+    border-radius: 20px 20px 0 0;
+
+   
 }    
+
+.hebergements-cards1 .card-content{
+    box-sizing: border-box;
+    justify-content: space-between;
+
+  
+}
+
+.hebergements-footer{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 25px;
+}
 
 /****** Populaires ***********/
 .populaires {
