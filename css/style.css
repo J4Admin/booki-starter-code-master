@@ -144,18 +144,18 @@ button{
     font-size: 18px;
 }
 .search-filters ul{
-  flex-flow: row nowrap;
-   margin: 0px;
+    flex-flow: row nowrap;
+    margin: 0px;
     gap: 15px ;
    
 }
 .search-filters li{
-   display: flex;
+    display: flex;
     align-items: center;
     padding: 5px;
-   border:2px solid var(--main-bg-color);
-   border-radius: 50px;
-   gap:10px;
+    border:2px solid var(--main-bg-color);
+    border-radius: 50px;
+    gap:10px;
 }
 .search-filters i{
     margin-right: 10px;
@@ -184,8 +184,6 @@ button{
     border-radius: 90px 90px 90px 90px;
     padding:  3px 8px;
 }
-
-
 
 a {
     color: inherit;
@@ -243,16 +241,19 @@ a {
 /******* Hebergements ******/
 
 .title-h2{
+
     font-size: 22px;
     font-weight: bold;
+    margin-top: auto;
+    
+  
 }
 .hebergements .card{
     display: flex;
     gap: 4px;
     flex-flow: column wrap;
-    width: 170%;
+    width: 100%;
 
-        
 }
 .hebergements-cards1{
     
@@ -291,7 +292,7 @@ a {
 
   
 }
-
+/******* Hebergements Section Footer ******/
 .hebergements-footer{
     font-size: 18px;
     font-weight: bold;
@@ -343,6 +344,75 @@ a {
     margin-bottom: 5px;
 }
 
+
+
+/*** Etapes 8 - Activities section ***/
+.activities{
+   padding: 30px;
+}
+.title-h2{
+
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.activities_marseille{
+    width: 100%;
+    height: 300px;
+}
+.activities-cards{
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+
+}
+.activities .card{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    padding: 0;
+}
+
+.activities-cards a{
+
+    display: flex;
+    width: 20%;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    gap:4px;
+  
+
+}
+.activities .card-txt{
+    height: 35px;
+    
+}
+  
+.activities-cards img{
+    width: 100%;
+    height: 350px;
+    border-radius: 20px 20px 0 0;
+    padding: 0;
+ 
+}    
+
+.activities-cards .card-content{
+    box-sizing: border-box;
+    justify-content: space-between;
+
+}
+.activities-cards .card-title{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 16px;
+
+}
 
 
 
