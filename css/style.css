@@ -8,6 +8,7 @@
         --main-color: #0065FC;
         --main-bg-color: #F2F2F2;
         --filter-bg-color: #DEEBFF;
+        --bg-color: white;
       
 }
 
@@ -56,7 +57,7 @@ nav li {
         width: 100px;
 }
 nav ul li a{
-        border-top: 4px solid white;
+        border-top: 4px solid var(--bg-color);
         padding: 15px;
 }
 #logo-nav {  
@@ -196,7 +197,7 @@ a {
 }
 
 .card {
-    background-color: white;
+    background-color: var(--bg-color);
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -245,6 +246,8 @@ a {
     font-size: 22px;
     font-weight: bold;
     margin-top: auto;
+
+  
     
   
 }
@@ -253,6 +256,7 @@ a {
     gap: 4px;
     flex-flow: column wrap;
     width: 100%;
+    margin-top: 15px;
 
 }
 .hebergements-cards1{
@@ -296,7 +300,7 @@ a {
 .hebergements-footer{
     font-size: 18px;
     font-weight: bold;
-    margin-top: 25px;
+    margin-top: 40px;
 }
 
 /****** Populaires ***********/
@@ -348,7 +352,11 @@ a {
 
 /*** Etapes 8 - Activities section ***/
 .activities{
-   padding: 30px;
+
+   padding: 50px;
+   background-color: var(--bg-color);
+   height: 500px;
+
 }
 .title-h2{
 
@@ -359,61 +367,94 @@ a {
 
 .activities_marseille{
     width: 100%;
-    height: 300px;
+
+  
 }
 .activities-cards{
-
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     box-sizing: border-box;
-
-
+    height: 420px;
 }
+
 .activities .card{
+    
     display: flex;
     flex-flow: column wrap;
     width: 100%;
-    padding: 0;
+    padding: 0px;
+   
 }
 
-.activities-cards a{
+.activities a{
 
     display: flex;
-    width: 20%;
+    width: 24%;
+    height: 430px;
     flex-wrap: nowrap;
     box-sizing: border-box;
-    gap:4px;
+    padding: 5px;
+    gap: 4px;
   
-
 }
 .activities .card-txt{
+
     height: 35px;
-    
 }
-  
+ 
 .activities-cards img{
+
     width: 100%;
-    height: 350px;
+    height: 365px;
     border-radius: 20px 20px 0 0;
     padding: 0;
  
 }    
 
-.activities-cards .card-content{
-    box-sizing: border-box;
-    justify-content: space-between;
-
-}
 .activities-cards .card-title{
+
     display: flex;
     box-sizing: border-box;
     align-items: center;
-    padding-left: 20px;
+    padding:20px 19px;
     font-size: 16px;
 
 }
+/*** Etapes 9 - Footer ***/
+.footer-booki{
+    height: 350px;
+   
+   
+}
+.footer-div{
+    display: flex;
+    gap: 250px;
+    background-color: var(--main-bg-color);
+    padding: 15px ;
+   
 
+}
+
+h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin: auto;
+
+    
+
+}
+ .footer-contenant a{
+    display: flex;
+    justify-content: flex-end;
+    flex-flow:row-reverse nowrap ;
+    font-size: 16px;
+    margin:auto;
+    padding-top: 10px;
+  
+
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
