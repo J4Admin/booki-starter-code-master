@@ -449,6 +449,15 @@ h3{
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+
+/*** Partie 10 / Responsive ***/
+/*** Responsive Display- Large + de 1440p***/
+@media (min-width:1440px) {
+    body{
+        width: 1440px;
+        margin: auto;        
+    }
+}
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
