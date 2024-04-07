@@ -132,22 +132,24 @@ button{
 }
 
 /*Etapes 5 */
-/*******  Filtres ******/
+/*******  Filters ******/
 
 .search-filters{
     display: flex;
     align-items:center; 
     margin: 25px 0px;
-    
+    flex-wrap: wrap;
 
 }
 .search-filters h2{
     font-size: 18px;
+    margin:15px;
 }
 .search-filters ul{
     flex-flow: row nowrap;
     margin: 0px;
-    gap: 15px ;
+    gap: 25px ;
+    padding: 0px;
    
 }
 .search-filters li{
@@ -247,9 +249,7 @@ a {
     font-weight: bold;
     margin-top: auto;
 
-  
-    
-  
+
 }
 .hebergements .card{
     display: flex;
@@ -460,8 +460,10 @@ h3{
 }
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
     .hebergements-and-populaires {
         flex-direction: column;
+
     }
 
     .hebergements {
@@ -490,7 +492,32 @@ h3{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-}
+
+    /** ETAPE 10 **/
+    .search-filters{
+        margin-right: 116px;
+    }
+    .search-footer{
+        margin-bottom: 30px;
+    }
+    .activities {
+        width: auto;
+        height: 340px;
+    }
+    .activities-cards{
+        height: 20px;
+    }
+    .activities .card{
+        height: 270px;}
+
+
+    .activities img{
+        height: 190px;
+    }
+    .activities-txt
+}   
+
+
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
