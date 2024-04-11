@@ -38,26 +38,22 @@ body {
 header {    
     max-width: 1440px;
 }
-nav {
-    justify-content: center;
-    width: 100% 
-}
+
 
 ul {
-    width: ;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    flex-flow: row wrap;
+    flex-direction: row;
     margin: auto; 
 }
 /* ajout de nav, dans le but de spécifié les attributs, à cette élément précis, sans parasité le reste du code notament >> Filtres Li*/
 nav li {
     display: flex;
     justify-content: flex-end;
-    width: 25;
+
 }
-nav ul li a{
+
+.nav-button{
     border-top: 4px solid var(--bg-color);
     border-bottom: 4px solid var(--bg-color);
     padding: 15px;
@@ -67,7 +63,7 @@ nav ul li a{
 
     flex-flow: nowrap column;
     justify-content: center;
-    max-width: 5em;
+    width: 75px;
 
 }
         /** Hover corespond au survole de la liste "li" contenu dans la liste "ul" ( le menu ) */
@@ -75,7 +71,7 @@ nav ul li a{
         la bordure-top qui décallé totallement le reste de la page, je l'ai résolut via reddit , 
         en y ajouttant une margin -3px pour compensé la bordure et 
         j'ai fini par ajouté à la version initial sans "hoover" une bordure blanche( transparente)*/
-nav a:hover {   
+.nav-button:hover {   
     box-sizing:content-box;
     border-top: 4px solid var(--main-color); 
     color: var(--main-color);   
@@ -88,10 +84,12 @@ nav a:hover {
 .search-title{
     margin: 45px 0 25PX 0;
 }
-
-h1{
+.title-search{
+    margin-bottom: 5px;
+}
+.title-search, .title-h2, .section-title{
     font-size: 22px;
-    margin: auto;
+    
 }
 
 p{
@@ -108,12 +106,15 @@ label{
     margin-right: -5px;
 }
 /*******   Area Text  ******/
-input{
-    border:1px solid var(--main-bg-color) ;
-    padding: 14px;
+input,button{
     font-size: 18px;
     font-weight: bold;
     text-align: center;  
+}
+input{
+    border:1px solid var(--main-bg-color) ;
+    padding: 14px;
+  
 }
 input:focus{
     outline:none;
@@ -126,15 +127,12 @@ button{
     color: var(--main-bg-color);
     padding: 14px 16px 14px 16px;
     margin-left: -4px;
-    font-size: 18px;
-    font-weight: bold;
 
 }
 .fa-magnifying-glass{
     display: none;
     
 }
-
 
 .fa-location-dot{
     color: black;
@@ -202,10 +200,7 @@ a {
     text-decoration: none;
 }
 
-.section-title {
-    margin: 0;
-    font-size: 22px;
-}
+
 
 .card {
     background-color: var(--bg-color);
@@ -254,8 +249,7 @@ a {
 
 .title-h2{
 
-    font-size: 22px;
-    font-weight: bold;
+  
     margin-top: auto;
 
 
@@ -551,7 +545,7 @@ h3{
         margin:auto;
         width: 100%;
     }
-    .navbar a {
+    .nav-button {
        display: flex;
         box-sizing: content-box;
         width: 100%;
@@ -579,7 +573,7 @@ h3{
         border-bottom: 4px solid var(--main-color);
        
     }
-    nav a:hover {   
+    .nav-button:hover {   
         box-sizing:content-box;
         border-top: none; 
       
