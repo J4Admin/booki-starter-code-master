@@ -526,7 +526,7 @@ h3{
     .activities img{
         height: 190px;
     }
-    .activities-txt
+    
 }   
 
 
@@ -630,20 +630,120 @@ h3{
 
     }
     .search-filters li{
-        width: 200px;
+        width: 45%;
         flex-wrap: wrap;
         box-sizing: border-box;
 
 
     }
 
+   /**Hebergements & popularities sections **/
+   .hebergements-and-populaires section{
+    border-radius: 0;
+    background-color: var(--bg-color);
+   }
+   .hebergements-and-populaires .populaires {
+    order: -1;
+    background-color: var(--main-bg-color)
    
+   }
 
-    .activities{
-        flex-direction: column;
-        justify-content: center;
-        
-        
-    }
+   /*** hebergerments section ***/
+.hebergements{
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
 
+}
+.hebergements-cards1{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+.hebergements a{
+    width: 100%;
+}
+
+   /*** popularities section ***/
+
+.populaires-cards{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    
+  
+}
+.populaires-cards  a{
+    width: 100%;
+}
+.populaires-cards  .card {
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+/** ACTIVITIES **/
+.activities {
+    padding: 30px;
+    margin: auto;
+    height: 1100px;
+}
+.activities_marseille{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.title-h2{
+
+}
+.activities .card-txt{
+    padding: 10px;
+    align-items: center;
+}
+.activities img{
+    padding: 0px;
+    width: 100%;
+}
+.activities a{
+    display: flex;
+    flex-direction: column;
+    width: 100%;   
+    height: 250px;
+    margin: auto;
+    
+}
+.activities .card{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+.activities a{
+    width: 100%;
+}
+.activities .card-txt .card-title{
+    padding: 0px;
+}
+
+
+/** Footer**/ 
+.footer-booki{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.footer-booki a{
+    width: 100%;
+}
+.footer-booki  div {
+    width: 100%;
+    box-sizing: border-box;
+
+}
 }
