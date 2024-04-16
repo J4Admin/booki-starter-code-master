@@ -30,8 +30,8 @@
                 afin que celle ci soit présent sur la même ligne sans devoir la repositionée et faire du code superflux dans le fichier .css -->
             <nav class="navbar">
                 <ul>
-                  <li><a href="#herbergements">Hébergements</a></li>
-                  <li><a href="#Activities">Activités</a></li>
+                  <li><a class="nav-button" href="#herbergements">Hébergements</a></li>
+                  <li><a class="nav-button" href="#Activities">Activités</a></li>
                 </ul>
                 <img src="/Projet2/booki-starter-code-master/images/logo/Booki.png" alt= "booki-logo" id="logo-nav" >
             </nav>
@@ -39,17 +39,18 @@
         </header>
         <section class="search-box">        
             <div class="search-title">
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <h1 class="title-search">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
             </div>
-            <div>
-                <form class="search-form">
+            <div class="search-form">
+                <form >
                     <label >
                         <i class="fa-sharp fa-solid fa-location-dot"></i>
                     </label>
                     <input type="text" name="search-txt" id="search-place" placeholder="Marseille, France">
-                    <button>
-                           Rechercher
+                    <button class="search-button">
+                        <i class="search-ico fa-solid fa-magnifying-glass"></i>
+                        <span class="search-txt">Rechercher</span>
                     </button>
                 </form>
             </div>
@@ -192,7 +193,7 @@
                                             <span class="sr-only">Note de 4 sur 5</span>
                                         </div>
                                     </div>
-                                </article>                            
+                                </article>                
                             </a>
                         </div>
                     <footer class="hebergements-footer">

@@ -38,33 +38,32 @@ body {
 header {    
     max-width: 1440px;
 }
-nav {
-    justify-content: center;
-    width: 100% 
-}
+
 
 ul {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    flex-flow: row wrap;
+    flex-direction: row;
     margin: auto; 
 }
 /* ajout de nav, dans le but de spécifié les attributs, à cette élément précis, sans parasité le reste du code notament >> Filtres Li*/
 nav li {
     display: flex;
     justify-content: flex-end;
-    width: 100px;
+
 }
-nav ul li a{
+
+.nav-button{
     border-top: 4px solid var(--bg-color);
+    border-bottom: 4px solid var(--bg-color);
     padding: 15px;
+    
 }
 #logo-nav {  
 
     flex-flow: nowrap column;
     justify-content: center;
-    max-width: 5em;
+    width: 75px;
 
 }
         /** Hover corespond au survole de la liste "li" contenu dans la liste "ul" ( le menu ) */
@@ -72,7 +71,7 @@ nav ul li a{
         la bordure-top qui décallé totallement le reste de la page, je l'ai résolut via reddit , 
         en y ajouttant une margin -3px pour compensé la bordure et 
         j'ai fini par ajouté à la version initial sans "hoover" une bordure blanche( transparente)*/
-nav a:hover {   
+.nav-button:hover {   
     box-sizing:content-box;
     border-top: 4px solid var(--main-color); 
     color: var(--main-color);   
@@ -85,10 +84,12 @@ nav a:hover {
 .search-title{
     margin: 45px 0 25PX 0;
 }
-
-h1{
+.title-search{
+    margin-bottom: 5px;
+}
+.title-search, .title-h2, .section-title{
     font-size: 22px;
-    margin: auto;
+    
 }
 
 p{
@@ -105,28 +106,34 @@ label{
     margin-right: -5px;
 }
 /*******   Area Text  ******/
-input{
-    border:1px solid var(--main-bg-color) ;
-    padding: 14px;
+input,button{
     font-size: 18px;
     font-weight: bold;
     text-align: center;  
+}
+input{
+    border:1px solid var(--main-bg-color) ;
+    padding: 14px;
+  
 }
 input:focus{
     outline:none;
 }
 /*******  Button "Rechercher" ******/
-button{
+.search-button{
     background-color: var(--main-color);
     border: 1px solid var(--main-color);
     border-radius: 0 10px 10px 0;
     color: var(--main-bg-color);
     padding: 14px 16px 14px 16px;
     margin-left: -4px;
-    font-size: 18px;
-    font-weight: bold;
 
 }
+.search-ico{
+    display: none;
+    
+}
+
 .fa-location-dot{
     color: black;
 }
@@ -177,8 +184,8 @@ button{
     display:flex;
     flex-flow: row nowrap;
     align-items: center;
-    margin-bottom: 10px;
-    gap: 10px;
+    margin: 10px;
+   
 }
 
 .search-footer i {
@@ -193,10 +200,7 @@ a {
     text-decoration: none;
 }
 
-.section-title {
-    margin: 0;
-    font-size: 22px;
-}
+
 
 .card {
     background-color: var(--bg-color);
@@ -245,8 +249,7 @@ a {
 
 .title-h2{
 
-    font-size: 22px;
-    font-weight: bold;
+  
     margin-top: auto;
 
 
@@ -399,9 +402,10 @@ a {
     gap: 4px;
 }
 
-.activities .card-txt{
-    height: 33px;
-}
+.activities .card-txt{ 
+    height: 50px;
+    box-sizing: border-box;
+} 
  
 .activities-cards img{
     width: 100%;
@@ -460,7 +464,7 @@ h3{
 }
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-
+   
     .hebergements-and-populaires {
         flex-direction: column;
 
@@ -494,9 +498,30 @@ h3{
     }
 
     /** ETAPE 10 **/
+    /** Responsive tablet **/
     .search-filters{
-        margin-right: 116px;
+  
+        min-width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+
     }
+
+
+    .search-filters li{
+        box-sizing: border-box;
+       
+    }
+    .search-filters a{
+        padding: 7px;
+        font-size: 0.9em;
+    }
+    .search-filters i {
+        margin-right: 5px;
+    }
+    
     .search-footer{
         margin-bottom: 30px;
     }
@@ -514,12 +539,254 @@ h3{
     .activities img{
         height: 190px;
     }
-    .activities-txt
+    .activities a{
+        height: auto;
+    }
+  
+    .activities .card-title{
+        padding-top: 5px;
+    }
 }   
 
 
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+@media (max-width: 767.9px) {
+   /** Responsive Phones **/
+   .main-container{
+    padding: 0px;
+   }
+
+   /** Nav Bar **/
+    .navbar{
+        display:flex;   
+        flex-flow: column-reverse nowrap;
+        margin:auto;
+        width: 100%;
+    }
+    .nav-button {
+        display: flex;
+        box-sizing: content-box;
+        width: 100%;
+        justify-content: center;
+        border: none;
+      
+        
+    
+    }
+    nav ul{
+        margin-top: 30px;
+        padding: 0px;
+        width: 100%;
+        justify-content: center;
+        
+    }
+    nav li {
+        display: flex;
+        width: 50%;
+        
+        border-bottom: 4px solid var(--bg-color);
+    }
+
+    nav li:hover{
+        border-bottom: 4px solid var(--main-color);
+       
+    }
+    .nav-button:hover {   
+        box-sizing:content-box;
+        border-top: none; 
+      
+          
+
+    }
+    nav img{
+        display: flex;
+        width: 100%;
+        margin:auto;
+        padding: 30px 0px 0px;
+
+    }
+
+
+    /** search-box**/
+    /** title **/
+    .search-title{
+
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+    }
+    /** form **/
+    .search-form{
+        display: flex;
+        justify-content:center;
+    }
+
+    input{
+        max-width: 190px;
+    }
+    /** search- button **/
+    .fa-magnifying-glass {
+        display: inline-block; 
+        color:var(--bg-color)
+    }
+    .search-txt {
+        display: none; 
+    }
+    .search-button{
+     
+        border-radius: 10px 10px 10px 10px;
+        margin-left: -10px;
+    }
+
+    /** Filters **/
+
+    .search-filters{
+        min-width: 40px;
+        height: 200px;
+        margin: 15px;
+        box-sizing: border-box;
+    }
+    .search-filters ul{
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        justify-content: flex-start;
+
+    }
+    .search-filters li{
+        width: 45%;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+
+
+    }
+
+    .search-filters a{
+        font-size: 0.8EM;
+        padding: 7px;
+    }
+    .search-filters i{
+        margin-right: 5px;
+    }
+
+    .search-footer{
+        margin: 45px 15px;
+    }
+
+/**Hebergements & popularities sections **/
+.hebergements-and-populaires section{
+    border-radius: 0;
+    background-color: var(--bg-color);
+}
+
+.hebergements-and-populaires .populaires {
+    order: -1;
+    background-color: var(--main-bg-color)
+}
+
+/*** hebergerments section ***/
+
+.hebergements{
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.hebergements-cards1{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hebergements a{
+    width: 100%;
+}
+
+   /*** popularities section ***/
+
+.populaires-cards{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.populaires-cards  a{
+    width: 100%;
+}
+
+.populaires-cards  .card {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/** ACTIVITIES **/
+.activities {
+    padding: 30px;
+    margin: auto;
+    height: 1100px;
+}
+.activities_marseille{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.activities .card-txt{
+    padding: 10px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.activities img{
+    padding: 0px;
+    width: 100%;
+    height: 147px;
+}
+
+.activities a{
+    display: flex;
+    flex-direction: column;
+    width: 100%;   
+    height: 250px;
+    margin: auto; 
+}
+
+.activities .card{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+}
+
+.activities a{
+    width: 100%;
+}
+
+.activities .card-txt .card-title{
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/** Footer**/ 
+.footer-booki{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-booki a{
+    width: 100%;
+}
+
+.footer-booki  div {
+    width: 100%;
+    box-sizing: border-box;
+}
 }
