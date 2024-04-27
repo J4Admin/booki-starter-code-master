@@ -176,10 +176,12 @@ input:focus {
 }
 
 .search-information i {
-  justify-content: center;
   border: 2px solid var(--main-bg-color);
   border-radius: 90px 90px 90px 90px;
   padding: 3px 8px;
+}
+.search-information-txt {
+  margin: 0px 5px;
 }
 
 a {
